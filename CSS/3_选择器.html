@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>3_选择器</title>
+    <style>
+        /* 标签选择器 */
+        /* p {
+            color: aqua;
+        }
+
+        div {
+            color: aqua;
+        } */
+
+        /* 类选择器 */
+        /* .red {
+            color: red;
+        }
+
+        .yellow {
+            color: yellow;
+        }
+
+        .pink {
+            color: pink;
+        }
+
+        .big {
+            font-size: 30px;
+        } */
+
+        /* id选择器 */
+        /* #red {
+            color: red;
+        }
+
+        #green {
+            color: green;
+        } */
+
+        /* 通配符选择器 */
+        * {
+            color: skyblue;
+        }
+    </style>
+</head>
+
+<body>
+    <!--  
+       标签选择器:选择的是一类标签,不能单独选中某一个
+    -->
+    <p>我是一个p标签</p>
+    <p>我也是一个p标签</p>
+    <div>我是一个div</div>
+    <div>我也是一个div</div>
+    <hr>
+    <!--  
+       类选择器:
+       1. 所有标签都有class属性
+       2. 类名可以由字母、数字、下划线、中划线组成,但是不能以数字或中划线开头
+       3. 一个标签可以同时有多个类名,类名之间以空格隔开
+       4. 类名可以重复，一个类选择器可以同时选中多个标签
+    -->
+    <p class="red big">小红</p>
+    <p class="yellow">小黄</p>
+    <p class="pink">小粉</p>
+    <p class="big">大</p>
+    <hr>
+    <!--  
+       ID选择器:
+       1. 所有标签都有id属性
+       2. id属性值类似于身份证号码,在页面中是唯一的,不可以重复
+       3. 一个标签上只能有一个id属性值
+       4. 一个id选择器只能选中一个标签
+    -->
+    <p id="red">红果果</p>
+    <p id="green">绿泡泡</p>
+    <hr>
+
+    <!--  
+       通配符选择器:选择所有标签
+    -->
+    <h1>我是h1</h1>
+    <div>小姐姐</div>
+    <p>小帅哥</p>
+    <h2>我是h2</h2>
+    <hr>
+
+
+</body>
+
+</html>

@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>13_表格</title>
+</head>
+
+<body>
+    <!-- 
+    1. table:表格整体
+    2. tr:表格每一行,用于包裹td
+    3. td:表格单元格,用于包裹内容
+    4. 顺序:table->tr->td
+    5. 属性:border:表格的边框
+    6. 属性:width:表格的宽度
+    7. 属性:height:表格的高度
+    8. 对于样式设置,实际开发中使用CSS来设置,不是通过属性来设置
+    -->
+    <h1>表格</h1>
+    <table border="1" width="300" height="300">
+        <tr>
+            <td>姓名</td>
+            <td>成绩</td>
+            <td>评语</td>
+        </tr>
+        <tr>
+            <td>小哥哥</td>
+            <td>100</td>
+            <td>小哥哥真帅气</td>
+        </tr>
+        <tr>
+            <td>小姐姐</td>
+            <td>100</td>
+            <td>小姐姐真漂亮</td>
+        </tr>
+    </table>
+    <hr>
+    <!-- 
+    1. caption:表格整体大标题,写在table标签内部
+    2. th:表头单元格,表格第一列的小标题,写在tr标签内部
+    -->
+    <table>
+        <caption>
+            <h1>学生成绩单</h1>
+        </caption>
+        <tr>
+            <th>姓名</th>
+            <th>成绩</th>
+            <th>评语</td>
+        </tr>
+        <tr>
+            <td>小哥哥</td>
+            <td>100</td>
+            <td>小哥哥真帅气</td>
+        </tr>
+        <tr>
+            <td>小姐姐</td>
+            <td>100</td>
+            <td>小姐姐真漂亮</td>
+        </tr>
+    </table>
+    <hr>
+
+    <!-- 
+    合并单元格:
+    1. 上下合并:只保留上面,删除其他
+    2. 左右合并:只保留左边,删除其他
+    3. rowspan:跨行合并
+    4. colspan:跨列合并
+    5. 注意,只有同一个结构的才可以合并,不能合并不同结构的
+    -->
+    <table border="1">
+        <caption>
+            <h1>学生成绩单</h1>
+        </caption>
+        <tr>
+            <th>姓名</th>
+            <th>成绩</th>
+            <th>评语</td>
+        </tr>
+        <tr>
+            <td>小哥哥</td>
+            <td rowspan="2">100</td>
+            <td>小哥哥真帅气</td>
+        </tr>
+        <tr>
+            <td>小姐姐</td>
+            <td>小姐姐真漂亮</td>
+        </tr>
+        <tr>
+            <td>总结</td>
+            <td colspan="2">郎才女貌</td>
+        </tr>
+    </table>
+
+</body>
+
+</html>
