@@ -1,0 +1,5 @@
+# ignore all iml file
+*.iml
+
+# ignore all .idea dir
+.idea/
